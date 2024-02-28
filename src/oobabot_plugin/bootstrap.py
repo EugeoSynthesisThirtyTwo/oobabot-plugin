@@ -83,8 +83,8 @@ def plugin_ui(
                 if shared.args.extensions:
                     if "api" not in shared.args.extensions:
                         api_extension_loaded = False
-                if shared.args.api_streaming_port:
-                    streaming_port = shared.args.api_streaming_port
+                if shared.args.api_port:
+                    streaming_port = shared.args.api_port
 
         except ImportError as err:
             if oobabot_logger:

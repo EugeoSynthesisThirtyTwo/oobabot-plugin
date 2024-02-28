@@ -61,7 +61,7 @@ class OobabotWorker:
             os.path.abspath(self.config_file),
         ]
         if self.port != oobabot_plugin.DEFAULT_STREAMING_API_PORT:
-            args.extend(["--base-url", f"ws://localhost:{str(self.port)}"])
+            args.extend(["--base-url", f"http://localhost:{str(self.port)}"])
 
         self.bot = oobabot.Oobabot(args)
         self.handlers = {}
